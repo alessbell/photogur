@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   get 'pictures' => 'pictures#index'
+
+  post 'pictures' => 'pictures#create'
+  get 'pictures/new' => 'pictures#new'
+
   get 'pictures/:id' => 'pictures#show', as: "picture"
 
-  get 'pictures/0' => 'pictures#picture0'
-  get 'pictures/1' => 'pictures#picture1'
-  get 'pictures/2' => 'pictures#picture2'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
