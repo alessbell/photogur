@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Photogur</title>
+  <title>Alessia's Photogur</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" src="//use.typekit.net/wjn2jig.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35728/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
-
 <%= yield %>
+<footer>
+  <p>Copyright Alessia Bellisario 2014. This site was crafted by Alessia Bellisario, a student at <a href="http://www.bitmakerlabs.com">Bitmaker Labs</a>.</p>
+</footer>
 
 </body>
 </html>
