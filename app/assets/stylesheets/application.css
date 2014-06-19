@@ -46,6 +46,27 @@ div.photo {
   padding: auto, auto, auto, auto;
 }
 
+p {
+  transition: all ls ease;
+}
+
+p:target {
+  color: red;
+}
+
+.tinted-image {
+
+  width: 960px;
+  height: 640px;
+
+  background:
+    linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+      ),
+
+    url(http://monicao.s3.amazonaws.com/bitmaker/wave.jpg);
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

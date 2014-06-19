@@ -4,6 +4,7 @@ class PicturesController < ApplicationController
 		@pictures = Picture.all
 		@most_recent_pictures = Picture.most_recent_five
 		@newest_first = Picture.newest_first
+		# @created_before = Picture.created_before
 	end
 
 	def show

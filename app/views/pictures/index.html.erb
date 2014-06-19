@@ -14,10 +14,13 @@
   <% end %>
 
 <h1>Most Recent Pictures</h1>
-<ul>
+<ol>
   <% @most_recent_pictures.each do |picture| %>
     <li><%= picture.title %></li>
   <% end %>
-</ul>
+</ol>
+
+<h1>Created Before</h1>
+
 
 </div>
